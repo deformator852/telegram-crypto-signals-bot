@@ -5,22 +5,27 @@ const features = [
   {
     icon: Target,
     title: "Problem Solved",
-    description: "Describe the core problem your project addresses and why it matters.",
+    description:
+      "Automates crypto trading signals delivery and analysis, helping Telegram groups get timely, reliable, and actionable insights. The web app also lets users easily view all open positions for better tracking and usability.",
   },
+
   {
     icon: Users,
     title: "Target Audience",
-    description: "Define who benefits from this project and how it improves their experience.",
+    description:
+      "Crypto traders in Telegram signals communities who want fast, reliable signal delivery and an easy way to track all open positions and averaging updates without constant manual checking.",
   },
   {
     icon: Zap,
     title: "Key Features",
-    description: "Highlight the main functionalities that make this project stand out.",
+    description:
+      "Instant TradingView-to-Telegram signal forwarding · Automatic saving and display of open positions · Real-time averaging detection and updates · Intuitive web dashboard for viewing all active trades · Efficient backend pipeline for reliable, hands-free operation.",
   },
   {
     icon: Sparkles,
     title: "Results & Impact",
-    description: "Share metrics, feedback, or outcomes that demonstrate success.",
+    description:
+      "Achieved instant, reliable TradingView-to-Telegram signals · Enabled easy tracking of open positions and averaging on the web app · Eliminated manual monitoring effort and boosted group efficiency.",
   },
 ];
 
@@ -39,7 +44,8 @@ const OverviewSection = () => {
             Project Overview
           </h2>
           <p className="text-muted-foreground">
-            A comprehensive look at what this project entails and the value it delivers.
+            A comprehensive look at what this project entails and the value it
+            delivers.
           </p>
         </motion.div>
 

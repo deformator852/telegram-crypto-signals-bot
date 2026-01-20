@@ -10,17 +10,23 @@ const Header = () => {
     >
       <div className="section-container">
         <div className="flex items-center justify-between h-16">
-          <a href="/" className="font-display text-xl font-semibold text-foreground">
-            Portfolio
-          </a>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#overview" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#overview"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
               Overview
             </a>
-            <a href="#gallery" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#gallery"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
               Gallery
             </a>
-            <a href="#details" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#details"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
               Details
             </a>
           </nav>

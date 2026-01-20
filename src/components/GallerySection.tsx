@@ -1,25 +1,32 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/project-hero.jpg";
-import mobileImage from "@/assets/project-mobile.jpg";
-import detailImage from "@/assets/project-detail.jpg";
+import positionOpenedImage from "@/assets/position-open.webp";
+import positionDCAImage from "@/assets/position-dca.webp";
+import positionClosedImage from "@/assets/position-closed.webp";
+import telegramWebAppImage from "@/assets/telegram-web-app.webp";
 
 const images = [
   {
-    src: heroImage,
-    alt: "Dashboard View",
-    caption: "Main dashboard with analytics overview",
+    src: telegramWebAppImage,
+    alt: "Telegram Web App",
+    caption: "Web app for viewing signals",
     span: "lg:col-span-2",
   },
   {
-    src: mobileImage,
-    alt: "Mobile Interface",
-    caption: "Responsive mobile design",
-    span: "lg:row-span-2",
+    src: positionOpenedImage,
+    alt: "Position Opened",
+    caption: "Position opened",
+    span: "lg:col-span-2",
   },
   {
-    src: detailImage,
-    alt: "Landing Page",
-    caption: "Marketing landing page",
+    src: positionDCAImage,
+    alt: "Position DCA Executed",
+    caption: "Position dca executed",
+    span: "lg:col-span-2",
+  },
+  {
+    src: positionClosedImage,
+    alt: "Position Closed",
+    caption: "Position closed",
     span: "lg:col-span-2",
   },
 ];
@@ -43,7 +50,7 @@ const GallerySection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-2 gap-6">
           {images.map((image, index) => (
             <motion.div
               key={image.alt}
@@ -60,7 +67,9 @@ const GallerySection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-primary-foreground font-medium">{image.caption}</p>
+                  <p className="text-primary-foreground font-medium">
+                    {image.caption}
+                  </p>
                 </div>
               </div>
             </motion.div>
