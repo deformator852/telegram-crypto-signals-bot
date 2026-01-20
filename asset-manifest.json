@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/telegram-crypto-signals-bot/static/css/main.f855e6bc.css",
+    "main.js": "/telegram-crypto-signals-bot/static/js/main.216a98d7.js",
+    "static/js/453.4cd1ad57.chunk.js": "/telegram-crypto-signals-bot/static/js/453.4cd1ad57.chunk.js",
+    "static/media/logo.svg": "/telegram-crypto-signals-bot/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/telegram-crypto-signals-bot/index.html",
+    "main.f855e6bc.css.map": "/telegram-crypto-signals-bot/static/css/main.f855e6bc.css.map",
+    "main.216a98d7.js.map": "/telegram-crypto-signals-bot/static/js/main.216a98d7.js.map",
+    "453.4cd1ad57.chunk.js.map": "/telegram-crypto-signals-bot/static/js/453.4cd1ad57.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.216a98d7.js"
+  ]
+}
