@@ -12,7 +12,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-center max-w-3xl mx-auto mb-12"
         >
-          <div className="flex items-center justify-center gap-2 mb-6">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 max-w-xl mx-auto">
             <span className="tag-badge">n8n</span>
             <span className="tag-badge">Workflow Automation</span>
             <span className="tag-badge">Telegram Bot</span>

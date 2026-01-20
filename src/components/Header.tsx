@@ -10,7 +10,7 @@ const Header = () => {
     >
       <div className="section-container">
         <div className="flex items-center justify-between h-16">
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-8">
             <a
               href="#overview"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -30,12 +30,6 @@ const Header = () => {
               Details
             </a>
           </nav>
-          <a
-            href="#contact"
-            className="px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
-          >
-            Contact
-          </a>
         </div>
       </div>
     </motion.header>

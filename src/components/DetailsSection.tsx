@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
-const techStack = [
-  "React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "Figma"
-];
+const techStack = ["n8n", "Node.js", "Telegram Bot API", "Vercel", "React"];
 
 const DetailsSection = () => {
   return (
@@ -20,18 +18,17 @@ const DetailsSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                This is where you write a detailed description of your project. Explain 
-                the context, the challenges you faced, and how you approached solving them.
+                This project is an automation pipeline and Telegram Web App
+                designed for a crypto signals Telegram group.
               </p>
               <p>
-                Discuss the design decisions you made and why. What made this project 
-                unique? What did you learn during the process? This section should give 
-                readers a comprehensive understanding of your work.
+                It listens for TradingView messages containing trading signals
+                and automatically forwards them to Telegram.
               </p>
               <p>
-                You can also mention any constraints you worked within, whether they 
-                were technical, time-based, or budget-related. This adds depth to your 
-                portfolio and shows your problem-solving abilities.
+                Position opening data is stored and later displayed when
+                averaging occurs. The project also includes a website that
+                presents detailed information about opened positions.
               </p>
             </div>
           </motion.div>
@@ -63,21 +60,17 @@ const DetailsSection = () => {
               <h3 className="font-display text-xl font-semibold text-foreground mb-4">
                 Timeline
               </h3>
-              <p className="text-muted-foreground">
-                3 months (January - March 2024)
-              </p>
+              <p className="text-muted-foreground">1 week (December 2025)</p>
             </div>
 
             <div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-4">
                 My Role
               </h3>
-              <p className="text-muted-foreground">
-                Lead Designer & Frontend Developer
-              </p>
+              <p className="text-muted-foreground">Automation Engineer</p>
             </div>
 
-            <div>
+            {/* <div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-4">
                 Links
               </h3>
@@ -95,7 +88,7 @@ const DetailsSection = () => {
                   GitHub →
                 </a>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

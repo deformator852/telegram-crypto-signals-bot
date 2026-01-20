@@ -1,4 +1,27 @@
 import { motion } from "framer-motion";
+import { Mail, Linkedin, Send } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+
+const contactLinks = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "kostneko30@gmail.com",
+    href: "mailto:kostneko30@gmail.com",
+  },
+  {
+    icon: Send,
+    label: "Telegram",
+    value: "@ghoilcsd",
+    href: "https://t.me/ghoilcsd",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    value: "Nikita Kostenko",
+    href: "https://www.linkedin.com/in/nikita-kostenko141/",
+  },
+];
 
 const Footer = () => {
   return (
@@ -8,48 +31,53 @@ const Footer = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       id="contact"
-      className="py-16 md:py-24 border-t border-border"
+      className="py-16 md:py-24 border-t border-border bg-muted/30"
     >
       <div className="section-container">
-        <div className="text-center max-w-xl mx-auto">
+        {/* Contact cards section */}
+        <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-            Let's Connect
+            Get In Touch
           </h2>
-          <p className="text-muted-foreground mb-8">
-            Interested in working together or have questions about this project? 
-            I'd love to hear from you.
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Ready to automate your business processes? Reach out through any of
+            these channels and let's discuss how I can help.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="mailto:hello@example.com"
-              className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
-            >
-              Get in Touch
-            </a>
-            <a
-              href="#"
-              className="px-6 py-3 border border-border rounded-lg font-medium text-foreground hover:bg-secondary transition-colors"
-            >
-              View More Projects
-            </a>
+        </div>
+
+        <div className="max-w-3xl mx-auto mb-16">
+          <div className="grid gap-6 sm:grid-cols-3">
+            {contactLinks.map((contact) => (
+              <a
+                key={contact.label}
+                href={contact.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <Card className="border-border/50 bg-card/50 backdrop-blur-sm h-full transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5">
+                  <CardContent className="pt-6 text-center">
+                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <contact.icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      {contact.label}
+                    </h3>
+                    <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                      {contact.value}
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
+            ))}
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2024 Your Name. All rights reserved.
+        {/* Bottom copyright + links */}
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+          <p className="text-muted-foreground">
+            © 2026 Nikita Kostenko. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              LinkedIn
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              GitHub
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Dribbble
-            </a>
-          </div>
         </div>
       </div>
     </motion.footer>
