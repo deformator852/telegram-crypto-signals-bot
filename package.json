@@ -1,7 +1,7 @@
 {
   "name": "telegram-crypto-signals",
   "version": "0.1.0",
-  "homepage": "https://deformator852.github.io/telegram-crypto-signals",
+  "homepage": "https://deformator852.github.io/telegram-crypto-signals-bot",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
