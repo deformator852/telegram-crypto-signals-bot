@@ -69,26 +69,6 @@ const DetailsSection = () => {
               </h3>
               <p className="text-muted-foreground">Automation Engineer</p>
             </div>
-
-            {/* <div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-4">
-                Links
-              </h3>
-              <div className="flex gap-4">
-                <a
-                  href="#"
-                  className="text-primary hover:underline font-medium"
-                >
-                  Live Demo →
-                </a>
-                <a
-                  href="#"
-                  className="text-primary hover:underline font-medium"
-                >
-                  GitHub →
-                </a>
-              </div>
-            </div> */}
           </motion.div>
         </div>
       </div>
